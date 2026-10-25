@@ -2386,42 +2386,32 @@ int main(int argc, char** argv) {
     win->menubar->add("&Файл/&Открыть...",        FL_CTRL + 'o',            menu_open);
     win->menubar->add("&Файл/&Сохранить",         FL_CTRL + 's',            menu_save);
     win->menubar->add("&Файл/Со&хранить как...",  FL_CTRL + FL_SHIFT + 's', menu_save_as);
-    win->menubar->add("&Файл/sep");
-    win->menubar->add("&Файл/sep");
     win->menubar->add("&Файл/Снэпшоты/&Создать (Ctrl+Alt+S)", FL_CTRL + FL_ALT + 's', menu_snapshot_create);
     win->menubar->add("&Файл/Снэпшоты/&История...",           0,                        menu_snapshot_history);
     win->menubar->add("&Файл/Снэпшоты/Открыть &папку",        0,                        menu_snapshot_folder);
-    win->menubar->add("&Файл/sep");
     win->menubar->add("&Файл/В&ыход",             FL_CTRL + 'q',            menu_quit);
 
     win->menubar->add("&Правка/&Отменить",              FL_CTRL + 'z',              menu_undo);
     win->menubar->add("&Правка/&Повторить",             FL_CTRL + 'y',              menu_redo);
-    win->menubar->add("&Правка/sep");
     win->menubar->add("&Правка/В&ырезать",              FL_CTRL + 'x',              menu_cut);
     win->menubar->add("&Правка/&Копировать",            FL_CTRL + 'c',              menu_copy);
     win->menubar->add("&Правка/Копировать как &ASCII",  FL_CTRL + FL_SHIFT + 'c',   menu_copy_ascii);
     win->menubar->add("&Правка/&Вставить",              FL_CTRL + 'v',              menu_paste);
-    win->menubar->add("&Правка/sep");
     win->menubar->add("&Правка/В&ыделить всё",          FL_CTRL + 'a',              menu_select_all);
 
     win->menubar->add("&Поиск/&Найти...",         FL_CTRL + 'f',            menu_find);
     win->menubar->add("&Поиск/&Заменить...",      FL_CTRL + 'h',            menu_find_repl);
-    win->menubar->add("&Поиск/sep");
     win->menubar->add("&Поиск/Найти &далее",      FL_F + 3,                 menu_find_next);
     win->menubar->add("&Поиск/Найти &ранее",      FL_SHIFT + FL_F + 3,      menu_find_prev);
-    win->menubar->add("&Поиск/sep");
     win->menubar->add("&Поиск/&Перейти...",       FL_CTRL + 'g',            menu_goto);
 
     win->menubar->add("&Вид/&Режим: Текст",       0,           menu_mode_text);
     win->menubar->add("&Вид/&Режим: HEX",         0,           menu_mode_hex);
     win->menubar->add("&Вид/&Переключить (F4)",   FL_F + 4,    menu_mode_toggle);
-    win->menubar->add("&Вид/sep");
     win->menubar->add("&Вид/&Увеличить шрифт",    FL_CTRL + '=', menu_zoom_in);
     win->menubar->add("&Вид/&Уменьшить шрифт",    FL_CTRL + '-', menu_zoom_out);
     win->menubar->add("&Вид/&Сбросить шрифт",     FL_CTRL + '0', menu_zoom_reset);
-    win->menubar->add("&Вид/sep");
     win->menubar->add("&Вид/&Номера строк",        0, menu_toggle_linenumbers, 0, FL_MENU_TOGGLE);
-    win->menubar->add("&Вид/sep");
     win->menubar->add("&Вид/&Тема/&Тёмная",  0, menu_theme_dark,  0, FL_MENU_RADIO);
     win->menubar->add("&Вид/&Тема/&Светлая", 0, menu_theme_light, 0, FL_MENU_RADIO);
     win->menubar->add("&Вид/&Тема/&Сепия",   0, menu_theme_sepia, 0, FL_MENU_RADIO);
